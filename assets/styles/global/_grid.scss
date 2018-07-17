@@ -1,0 +1,32 @@
+@mixin grid($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+@mixin grid-col($i:1) {
+    @media (min-width: $br-mobile + 1) {
+        width: (100% / $i);
+        background-color: orange;
+    }
+    @media (max-width: $br-mobile) {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+@mixin grid-col-tablet($i:1) {
+    @media (min-width: $br-tablet + 1) {
+        width: (100% / $i);
+        background-color: blue;
+    }
+}
+
+@mixin grid-col-deskopt($i:1) {
+    @media (min-width: $br-deskopt + 1) {
+        width: (100% / $i);
+        background-color: green;
+    }
+}
+

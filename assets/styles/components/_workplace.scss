@@ -1,0 +1,22 @@
+.workplace {
+    height: 80vh;
+    background: lightblue;
+
+    &__container {
+        @include grid(column);
+        justify-content: center;
+        height: 100%;
+        @include max-media($br-mobile) {
+            justify-content: space-between;
+        }
+
+        &__title {
+            @include grid-col(2);
+        }
+
+        &__content {
+            @include grid-col(2);
+        }
+    }
+
+}

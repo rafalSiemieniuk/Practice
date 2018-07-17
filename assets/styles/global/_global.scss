@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $container-max;
+}

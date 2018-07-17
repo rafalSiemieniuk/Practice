@@ -1,0 +1,37 @@
+.header {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+        @include min-media($br-tablet) {
+            margin: 0 auto;
+            max-width: $big-container-max;
+        }
+        &__logo {
+            order: 1;
+        }
+        &__registration {
+            order: 3;
+            &__list {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__nav {
+            order: 2;
+
+            @include min-media($br-tablet) {
+                order: 4;
+                flex: 1 1 100%;
+
+            }
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                max-width: $big-container-max;
+            }
+        }
+    }
+}

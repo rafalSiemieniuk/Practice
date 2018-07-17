@@ -1,7 +1,8 @@
-@import "components/_reset";
-@import "components/_variables";
-@import "components/_global";
-@import "components/_mixin";
+@import "global/_reset";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_mixin";
+@import "global/_grid";
 
-@import "components/c_header";
-@import "components/c_workplace";
+@import "components/_header";
+@import "components/_workplace";

@@ -4,7 +4,7 @@
     }
 }
 @mixin max-media($brpoint) {
-    @media (max-width: $brpoint) {
+    @media (max-width: $brpoint + 1px) {
         @content;
     }
 }

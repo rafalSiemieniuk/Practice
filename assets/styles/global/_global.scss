@@ -26,5 +26,31 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: $container-max;
+    max-width: $container-max + $space * 4;
+    padding-left: $space * 2;
+    padding-right: $space * 2;
 }
+
+.selected, .unselected {
+    display: inline-block;
+    color: #00FFCC;
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #00FFCC;
+        transition: width .3s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.selected {
+    font-weight: 700;
+    &::after {
+        width: 33px;
+    }
+}
+

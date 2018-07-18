@@ -6,35 +6,106 @@
     <meta name="viewport" content="width=device-width">
     <title>Practice</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__main">
-            <div class="header__main__logo">
-                <img src="" alt="Logo">
-            </div>
-            <nav class="header__main__nav">
-                <ul class="header__main__nav__list">
-                    <li class="header__main__nav__list__element">zenifero WorkPlace</li>
-                    <li class="header__main__nav__list__element">Overview</li>
-                    <li class="header__main__nav__list__element">Features</li>
-                    <li class="header__main__nav__list__element">Specs</li>
-                    <li class="header__main__nav__list__element">FAQ</li>
-                    <li class="header__main__nav__list__element">Contact</li>
-                </ul>
+        <div class="hdr-top">
+            <a href="" class="hdr-top__logo">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/logo.png">
+                    <img src="assets/images/mob_logo.png" alt="logo">
+                </picture>
+            </a>
+            <nav class="hdr-top__nav">
+                <label class="hdr-top__nav__select-nav select-nav" for="nav-select">
+                    <select name="nav-select" id="navSelect" class="select-nav__select">
+                        <option value="zenifero WorkPlace:" class="select-nav__element">zenifero WorkPlace:</option>
+                        <option value="Overview" class="select-nav__element">Overview</option>
+                        <option value="Features" class="select-nav__element">Features</option>
+                        <option value="Specs" class="select-nav__element">Specs</option>
+                        <option value="FAQ" class="select-nav__element">FAQ</option>
+                        <option value="Contact" class="select-nav__element">Contact</option>
+                    </select>
+                </label>
             </nav>
-            <div class="header__main__registration">
-                <ul class="header__main__registration__list">
-                    <li class="header__main__registration__list__element">Zonifero</li>
-                    <li class="header__main__registration__list__element">Store</li>
-                    <li class="header__main__registration__list__element">Blog</li>
-                    <li class="header__main__registration__list__element">world</li>
-                    <li class="header__main__registration__list__element">Sing in</li>
-                    <li class="header__main__registration__list__element">Get the app</li>
+            <div class="hdr-top__registration">
+                <ul class="hdr-top__registration__list">
+                    <li class="hdr-top__registration__element">
+                        <a class="hdr-top__registration__link" href="#">zenifero produkts</a>
+                    </li>
+                    <li class="hdr-top__registration__element">
+                        <a class="hdr-top__registration__link" href="#">Store</a>
+                    </li>
+                    <li class="hdr-top__registration__element">
+                        <a class="hdr-top__registration__link" href="#">Blog</a>
+                    </li>
                 </ul>
+                <div class="hdr-top__registration--globe">
+                    <img class="image" src="assets/images/globe.png" alt="logo">
+                    <i class="hdr-top__registration--icon material-icons">
+                        keyboard_arrow_down
+                    </i>
+                </div>
+                <div class="hdr-top__registration--sing-in">
+                    <a class="hdr-top__registration__link" href="#">Sing in</a>
+                </div>
+                <button class="hdr-top__registration--button">
+                    Get the app
+                </button>
+            </div>
+            <div class="hdr-top__hamburger hamburger">
+                <input class="hamburger--toggle" id="toggle" type="checkbox">
+                <label class="hamburger__loaf
+                " for="toggle">
+                    <span class="hamburger__component hamburger--top"></span>
+                    <span class="hamburger__component hamburger--mid"></span>
+                    <span class="hamburger__component hamburger--bottom"></span>
+                </label>
+                <div class="hamburger__menu">
+                    <ul class="hamburger__menu__list">
+                        <li class="hamburger__menu__element">
+                            <a class="hamburger__menu__link" href="#">zenifero WorkPlace</a>
+                        </li>
+                        <li class="hamburger__menu__element">
+                            <a class="hamburger__menu__link" href="#">Store</a>
+                        </li>
+                        <li class="hamburger__menu__element">
+                            <a class="hamburger__menu__link" href="#">Blog</a>
+                        </li>
+                        <li class="hamburger__menu__element">
+                            <a class="hamburger__menu__link" href="#">Sing in</a>
+                        </li>
+                        <li class="hamburger__menu__element">
+                            <a class="hamburger__menu__link" href="#">Get the app</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <nav class="hdr-bottom__nav container">
+            <ul class="hdr-bottom__nav__list">
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link unselected" href="#">zenifero WorkPlace:</a>
+                </li>
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link selected" href="#">Overview</a>
+                </li>
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link unselected" href="#">Features</a>
+                </li>
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link unselected" href="#">Specs</a>
+                </li>
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link unselected" href="#">FAQ</a>
+                </li>
+                <li class="hdr-bottom__nav__element">
+                    <a class="hdr-bottom__nav__link unselected" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="workplace">
@@ -44,7 +115,7 @@
                 <h1>your workplace</h1>
             </div>
             <div class="workplace__container__content">
-                <p class="workplace__container__content__message">Effectively and quickly from your mobile device. Staying connected has never been easier with zonifero WorkPlace.
+                <p class="workplace__container__content__message">Effectively and quickly from your mobile device. Staying connected has never been easier with zonifero WorkPlace.
                 </p>
                 <div class="workplace__container__content__buttons">
                     <button>Google Play</button>

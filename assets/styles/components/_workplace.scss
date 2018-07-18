@@ -1,6 +1,6 @@
 .workplace {
-    height: 80vh;
-    background: lightblue;
+     background: url(/assets/images/hand.png) 80% bottom /contain no-repeat, url(/assets/images/first_section_bg.png) center /cover no-repeat;
+    height: calc(100vh - #{$max-deskopt-hdr-top-height} - #{$max-deskopt-hdr-bottom-height});
 
     &__container {
         @include grid(column);
@@ -18,5 +18,31 @@
             @include grid-col(2);
         }
     }
+}
 
+
+// MOBILE
+
+@include max-media($br-mobile) {
+    .workplace {
+        background: url(/assets/images/hand.png) center bottom /contain no-repeat, url(/assets/images/first_section_bg.png) right top /cover no-repeat;
+       height: calc(100vh - #{$max-mobile-hdr-top-height});
+
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+
+            &__title {
+                padding-left: $space * 2;
+                padding-right: $space * 2;
+            }
+
+            &__content {
+                background-color: $grey-color;
+                padding-left: $space * 2;
+                padding-right: $space * 2;
+            }
+        }
+
+    }
 }

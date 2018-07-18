@@ -1,5 +1,7 @@
 $primary-color: #3046FF;
+$primary-color-light: #BEC3FF;
 $complementary-color: #00C599;
+$complementary-color-light: #00FFCC;
 $grey-color: #E7E7E7;
 $danger-color: #FF0000;
 $black-color: #000;
@@ -18,6 +20,13 @@ $body-font-size: $base-unit;
 $body-line-height: 1.5;
 
 $space: .5882 * $base-unit; // ~10px
+
+$deskopt-header-space: $base-unit * 2.35; // ~40px
+$mobile-header-space: $base-unit * 1.17; // ~20px
+
+$max-deskopt-hdr-top-height: $base-unit * 6.47; // ~110px
+$max-deskopt-hdr-bottom-height: $base-unit * 3.82; // ~65px
+$max-mobile-hdr-top-height: $base-unit * 3.64; // ~61.9px
 
 $container-max: 70.5882 * $base-unit; // ~1200px
 $big-container-max: 105.8824 * $base-unit; // ~1800px

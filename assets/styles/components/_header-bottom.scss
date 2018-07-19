@@ -1,0 +1,26 @@
+.hdr-bottom {
+    max-height: $max-deskopt-hdr-bottom-height;
+    &__nav {
+        padding-top: $deskopt-header-space;
+        padding-bottom: $deskopt-header-space;
+        &__list {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__link {
+            color: $black-color;
+            padding-right: $space * 4;
+            font-size: $body-font-size * 1.12;
+            @include max-media($br-tablet) {
+                padding-right: $space * 2;
+                font-size: $body-font-size * .8;
+            }
+        }
+    }
+}
+
+@include max-media($br-tablet) {
+    .hdr-bottom__nav {
+        display: none;
+    }
+}

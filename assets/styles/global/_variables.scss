@@ -2,7 +2,7 @@ $primary-color: #3046FF;
 $primary-color-light: #BEC3FF;
 $complementary-color: #00C599;
 $complementary-color-light: #00FFCC;
-$grey-color: #E7E7E7;
+$grey-color: #F7F7F7;
 $danger-color: #FF0000;
 $black-color: #000;
 $white-color: #FFF;
@@ -17,7 +17,7 @@ $fw-bold: 700;
 $base-unit: 1rem;
 
 $body-font-size: $base-unit;
-$body-line-height: 1.5;
+$body-line-height: 1.47;
 
 $space: .5882 * $base-unit; // ~10px
 
@@ -26,14 +26,12 @@ $mobile-header-space: $base-unit * 1.17; // ~20px
 
 $max-deskopt-hdr-top-height: $base-unit * 6.47; // ~110px
 $max-deskopt-hdr-bottom-height: $base-unit * 3.82; // ~65px
+$max-deskopt-header-height: $max-deskopt-hdr-top-height + $max-deskopt-hdr-bottom-height; // ~175px;
 $max-mobile-hdr-top-height: $base-unit * 3.64; // ~61.9px
 
 $container-max: 70.5882 * $base-unit; // ~1200px
-$big-container-max: 105.8824 * $base-unit; // ~1800px
 
 $br-mobile: 567px;
 $br-tablet: 768px;
 $br-deskopt: 992px;
-
-$gutter-grid: 30px;
-
+$br-deskopt-large: 1200px;

@@ -1,0 +1,60 @@
+.hamburger {
+    display: block;
+    padding-right: $space * 2;
+
+    &__toggle {
+        display: none;
+    }
+    &__component {
+        position: relative;
+        display: block;
+        width: 12px;
+        height: 1px;
+        background-color: $primary-color;
+        box-shadow: 0px -1px 0px 0px #bec3ff;
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+    }
+    &--mid {
+        margin: 4px 0;
+    }
+    &__toggle:checked+&__loaf {
+        .hamburger--top {
+            transform: rotate(-45deg);
+            margin-top: 5px;
+        }
+        .hamburger--mid {
+            transform: rotate(45deg);
+            margin-top: -1px;
+        }
+        .hamburger--bottom {
+            transform: scale(0);
+        }
+        &+.hamburger__menu {
+            right: 0;
+        }
+    }
+    &__menu {
+        position: fixed;
+        width: 75%;
+        height: 100%;
+        background-color: $white-color;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        &__link {
+            color: $black-color;
+        }
+    }
+}

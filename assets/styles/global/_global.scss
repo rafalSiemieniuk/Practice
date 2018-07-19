@@ -18,12 +18,6 @@ body {
     height: auto;
 }
 
-.clear::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .container {
     margin: 0 auto;
     max-width: $container-max + $space * 4;
@@ -34,6 +28,7 @@ body {
 .selected, .unselected {
     display: inline-block;
     color: #00FFCC;
+    transition: all .3s;
     &::after {
         content: '';
         display: block;
@@ -45,12 +40,55 @@ body {
     &:hover::after {
         width: 100%;
     }
+    &:hover {
+        text-shadow: 1px 0 0 black;
+    }
 }
 
 .selected {
-    font-weight: 700;
+    text-shadow: 1px 0 0 black;
     &::after {
         width: 33px;
     }
 }
 
+.btn {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__primary {
+        border: none;
+        min-width: $space * 20;
+        min-height: $space * 6;
+        color: $white-color;
+        background-color: $primary-color;
+        transition: all .5s;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $white-color;
+            box-shadow: inset 0px 0px 0px 1px $primary-color;
+        }
+    }
+
+    &__black {
+        max-width: $space * 20;
+        max-height: $space * 7;
+        display: inline-block;
+        margin-right: $space * 2;
+
+        @include max-media($br-deskopt) {
+            min-width: unset;
+            min-width: unset;
+            margin-right: unset;
+
+            &--google-play {
+                margin-right: $space * .8;
+            }
+            &--app-store {
+                margin-left: $space * .8;
+            }
+        }
+    }
+}

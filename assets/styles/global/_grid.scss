@@ -6,28 +6,22 @@
 }
 
 @mixin grid-col($i:1) {
-    @media (min-width: $br-mobile + 1px) {
-        width: (100% / $i); // background-color: orange;
+    @media (min-width: $br-mobile) {
+        width: (100% / $i);
     }
     @media (max-width: $br-mobile) {
-        width: 100%; // background-color: red;
+        width: 100%;
     }
 }
 
 @mixin grid-col-tablet($i:1, $minmax:min) {
     @media (#{$minmax}-width: $br-tablet + 1px) {
-        width: (100% / $i); // background-color: blue;
-    }
-    @media (#{$minmax}-width: $br-tablet) {
-        width: (100% / $i); // background-color: rgb(57, 57, 212);
+        width: (100% / $i);
     }
 }
 
 @mixin grid-col-deskopt($i:1, $minmax:min) {
     @media (#{$minmax}-width: $br-deskopt + 1px) {
-        width: (100% / $i); // background-color: green;
-    }
-    @media (#{$minmax}-width: $br-deskopt) {
-        width: (100% / $i); // background-color: rgb(53, 211, 53);
+        width: (100% / $i);
     }
 }

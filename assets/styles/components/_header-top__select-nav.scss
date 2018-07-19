@@ -1,0 +1,31 @@
+.select-nav {
+    position:relative;
+    color: $black-color;
+    min-width: $space * 16;
+
+    &__select {
+        font-size: $body-font-size * .88;
+        min-width: $space * 16;
+        margin: 0;
+        border:none;
+        outline:none;
+        background-color: $white-color;
+        display: inline-block;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor:pointer;
+    }
+
+    &:after {
+        content: '>';
+        font-family: $second-font;
+        font-size: $body-font-size * 1.29;
+        transform: rotate(90deg);
+        right: 5px;
+        top: 0px;
+        bottom: -20%;
+        position: absolute;
+        pointer-events: none;
+    }
+}

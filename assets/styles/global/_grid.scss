@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: $direction;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 @mixin grid-col($i:1) {
@@ -18,10 +18,16 @@
     @media (#{$minmax}-width: $br-tablet + 1px) {
         width: (100% / $i);
     }
+    @media (max-width: $br-tablet + 1px) {
+        width: 100%;
+    }
 }
 
 @mixin grid-col-deskopt($i:1, $minmax:min) {
     @media (#{$minmax}-width: $br-deskopt + 1px) {
         width: (100% / $i);
+    }
+    @media (max-width: $br-deskopt + 1px) {
+        width: 100%;
     }
 }

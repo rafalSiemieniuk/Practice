@@ -1,10 +1,12 @@
 $max-workplace-container: $base-unit * 26.47; // ~450px
 $max-width-workplace-content: $base-unit * 24.24; // ~450px
 $max-height-workplace-content: $base-unit * 17.65; // ~300px
-$center-hand-img: right -20px;
+
+$deskopt-bg-positioning: left 85% bottom -100px;
+$mobile-bg-positioning: right -20px top 225px;
 
 .workplace {
-     background: url(/assets/images/hand.png) left 85% bottom -100px /contain no-repeat, url(/assets/images/first_section_bg.png) right /cover no-repeat;
+     background: url(/assets/images/hand.png) $deskopt-bg-positioning /contain no-repeat, url(/assets/images/first_section_bg.png) right /cover no-repeat;
     height: calc(100vh - #{$max-deskopt-header-height});
     min-height: calc(#{$max-deskopt-header-height} + #{$max-workplace-container});
     &__container {
@@ -46,7 +48,7 @@ $center-hand-img: right -20px;
 
 @include max-media($br-deskopt) {
     .workplace {
-        background: url(/assets/images/hand.png) $center-hand-img top 225px /contain no-repeat, url(/assets/images/desks.png) right /contain no-repeat, $grey-color;
+        background: url(/assets/images/hand.png) $mobile-bg-positioning /contain no-repeat, url(/assets/images/desks.png) right /contain no-repeat, $grey-color;
         height: calc(100vh - #{$max-mobile-hdr-top-height} + #{$max-height-workplace-content});
 
         &__container {

@@ -2,16 +2,18 @@
 //DESKOPT
 
 .management {
+    position: relative;
     overflow: hidden;
     background-color: $grey-color;
 
-    &__container {
+    &__list {
         @include grid(row);
     }
 
     &__element {
         @include grid-col-tablet(3);
-        padding: $space * 6 0;
+        padding-top: $space * 6;
+        padding-bottom: $space * 9;
         margin-left: $space * -1;
         margin-right: $space * -1;
 
@@ -36,7 +38,7 @@
 
 @include max-media($br-tablet) {
 
-    .management__container {
+    .management__list {
         justify-content: flex-start;
         flex-wrap: nowrap;
         padding: 0;
@@ -55,3 +57,5 @@
         }
     }
 }
+
+

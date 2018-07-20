@@ -29,9 +29,8 @@ $max-deskopt-hdr-bottom-height: $base-unit * 3.82; // ~65px
 $max-deskopt-header-height: $max-deskopt-hdr-top-height + $max-deskopt-hdr-bottom-height; // ~175px;
 $max-mobile-hdr-top-height: $base-unit * 3.64; // ~61.9px
 
-$container-max: 70.5882 * $base-unit; // ~1200px
+$container: 70.5882 * $base-unit; // ~1200px
 
 $br-mobile: 567px;
 $br-tablet: 768px;
 $br-deskopt: 992px;
-// $br-deskopt-large: 1200px;

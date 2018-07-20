@@ -1,0 +1,51 @@
+.slider-dots {
+    display: none;
+}
+
+@include max-media($br-tablet) {
+
+        .slider-dots {
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            bottom: $space * 3;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            &-button {
+                background: transparent;
+                width: $space * 2;
+                height: $space * 2;
+                border: 0;
+                text-indent: -999px;
+                overflow: hidden;
+                cursor: pointer;
+                position: relative;
+            }
+
+            &-button:before {
+                content:'';
+                position: absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%, -50%);
+                background: $black-color;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                transition:0.5s all;
+            }
+
+            &-element-active &-button:before {
+                background: $primary-color;
+            }
+
+            &-button:focus {
+                outline: none;
+            }
+        }
+    }

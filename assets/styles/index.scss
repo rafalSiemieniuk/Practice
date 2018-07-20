@@ -1,10 +1,12 @@
-@import "global/_reset";
-@import "global/_variables";
-@import "global/_mixin";
-@import "global/_grid";
-@import "global/_global";
-@import "global/_template";
+@import "global/reset";
+@import "global/variables";
+@import "global/mixin";
+@import "global/grid";
+@import "global/global";
+@import "global/template";
 
-@import "components/_header";
-@import "components/_workplace";
-@import "components/_management";
+@import "components/header";
+@import "components/workplace";
+@import "components/management";
+@import "components/problem-solving-app";
+@import "components/slider-dots";

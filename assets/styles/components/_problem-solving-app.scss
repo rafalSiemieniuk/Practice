@@ -1,0 +1,56 @@
+.problem-sloving-app {
+    overflow: hidden;
+    background-color: $grey-color;
+    padding: $space * 3 0;
+    &__container {
+        position: relative;
+        background-color: $grey-color;
+    }
+    &__list {
+        @include grid(row);
+        max-width: $container + $space * 2;
+        margin-left: $space * -1;
+        margin-right: $space * -1;
+    }
+    &__element {
+        flex: 0 0 $space * 31;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $white-color;
+        padding: $space * 6;
+        margin: $space * 2 $space 0 $space;
+        &__title {
+            @extend %third-headerline-text;
+            padding-top: $space * 6;
+            padding-bottom: $space * 3;
+        }
+        &__text {
+            font-weight: 300;
+        }
+    }
+}
+
+@include max-media($br-tablet) {
+    .problem-sloving-app {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 0;
+
+        &__list, &__container {
+            padding: 0;
+            margin: 0;
+        }
+
+        &__element {
+            flex: 0 0 100%;
+            align-items: center;
+            margin: $space * 2 0 0 0;
+            padding: $space * 6 $space * 2;
+
+            &__title, &__text {
+                max-width: $space * 31;
+            }
+        }
+    }
+}

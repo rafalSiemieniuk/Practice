@@ -6,15 +6,15 @@
     line-height: $body-font-size * 4.71;
     @include max-media($br-deskopt) {
         font-size: $body-font-size * 3.52;
-        line-height: $body-font-size * 4.12;
+        line-height: $body-font-size * 4.20;
     }
     @include max-media($br-tablet) {
         font-size: $body-font-size * 2.93;
-        line-height: $body-font-size * 2.94;
+        line-height: $body-font-size * 3.60;
     }
     @include max-media($br-mobile) {
-        font-size: $body-font-size * 2.34;
-        line-height: $body-font-size * 2.94;
+        font-size: $body-font-size * 2.35;
+        line-height: $body-font-size * 3.00;
     }
 }
 %second-headerline-text {
@@ -33,4 +33,17 @@
     font-weight: 700;
     color: $black-color;
     font-size: $body-font-size * 1.12;
+}
+%description-text {
+    color: $black-color;
+    font-size: $body-font-size * 1.76;
+    line-height: $body-font-size * 2.35;
+    @include max-media($br-deskopt) {
+        font-size: $body-font-size * 1.60;
+        line-height: $body-font-size * 2.00;
+    }
+    @include max-media($br-tablet) {
+        font-size: $body-font-size * 1.29;
+        line-height: $body-font-size * 1.88;
+    }
 }

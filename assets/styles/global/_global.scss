@@ -13,43 +13,11 @@ body {
     line-height: $body-line-height;
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
-}
-
 .container {
     margin: 0 auto;
     max-width: $container + $space * 4;
     padding-left: $space * 2;
     padding-right: $space * 2;
-}
-
-.selected, .unselected {
-    display: inline-block;
-    color: #00FFCC;
-    transition: all .3s;
-    &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 3px;
-        background: #00FFCC;
-        transition: width .3s;
-    }
-    &:hover::after {
-        width: 100%;
-    }
-    &:hover {
-        text-shadow: 1px 0 0 black;
-    }
-}
-
-.selected {
-    text-shadow: 1px 0 0 black;
-    &::after {
-        width: 33px;
-    }
 }
 
 .btn {
@@ -77,6 +45,11 @@ body {
         max-height: $space * 7;
         display: inline-block;
         margin-right: $space * 2;
+
+        &__image {
+            width: 100%;
+            height: auto;
+        }
 
         @include max-media($br-deskopt) {
             min-width: unset;

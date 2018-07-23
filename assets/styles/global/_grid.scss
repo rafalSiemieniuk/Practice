@@ -1,11 +1,12 @@
-@mixin grid($direction) {
+@mixin grid($direction, $wrap:nowrap) {
     display: flex;
     flex-direction: $direction;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-wrap: $wrap;
 }
 
 @mixin grid-col($i:1) {
+    flex-grow: 1;
     @media (min-width: $br-mobile) {
         width: (100% / $i);
     }

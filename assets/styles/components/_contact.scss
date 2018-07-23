@@ -1,0 +1,139 @@
+.contact {
+    overflow: hidden;
+
+    &__menu-list {
+        margin-top: $space * 6;
+        margin-bottom: $space * 6;
+        padding-right: $space * 4;
+        display: flex;
+        justify-content: center;
+
+        &__menu-element {
+            padding-right: $space * 4;
+            display: inline-block;
+            transition: all .3s;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 3px;
+                background: #00FFCC;
+                transition: width .3s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+            &:hover {
+                text-shadow: 1px 0 0 $black-color;
+            }
+
+            &--selected {
+                text-shadow: 1px 0 0 $black-color;
+                &::after {
+                    width: 33px;
+                }
+            }
+        }
+    }
+
+    &__form {
+        @include grid(row,wrap);
+        margin-right: $space * -6;
+        margin-left: $space * -6;
+
+        &__element {
+            @include grid-col-tablet(2);
+            padding: $space * 4 $space * 6 0 $space * 6;
+
+            &--message {
+                @include grid-col-tablet();
+                order: 5;
+            }
+        }
+
+        &__label {
+            font-size: $body-font-size * .75;
+            font-weight: 300;
+        }
+
+        &__title-asterisk {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "*";
+                display: block;
+                top: 0;
+                right: -8px;
+                color: $primary-color;
+            }
+        }
+
+        &__input{
+            width: 100%;
+            font-family: $primary-font;
+            padding-top: $space * 2;
+            padding-bottom: $space * 1;
+            font-size: $body-font-size * 1.75;
+            border: none;
+            background-image: linear-gradient(to right, black 15%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 10px 1px;
+            background-repeat: repeat-x;
+            outline: none;
+
+            &--message {
+                resize: none;
+                height: $body-font-size * 1.75 + $space * 4;
+                overflow: hidden;
+                line-height: 1.3;
+            }
+        }
+
+        &__wrap-btn {
+            @include grid-col-tablet();
+            order: 6;
+        }
+
+        &__btn {
+            display: block;
+            margin: $space * 4 auto;
+            font-size: $body-font-size;
+        }
+    }
+
+    @include max-media($br-tablet) {
+        &__menu-list {
+            margin: $space * 3 auto;
+            padding-right: 0;
+            justify-content: flex-start;
+        }
+
+        &__form {
+
+            &__element {
+                padding-top: $space * 3;
+
+                &--message {
+                    padding-top: $space * 5;
+                }
+
+                &--email {
+                    order: 3;
+                }
+
+                &--phone {
+                    order: 4;
+                }
+            }
+
+            @include max-media($br-mobile) {
+                &__input--message {
+                    height: $space * 15;
+                }
+            }
+        }
+    }
+}

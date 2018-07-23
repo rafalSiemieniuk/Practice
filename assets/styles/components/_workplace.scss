@@ -1,5 +1,5 @@
-$max-workplace-container: $base-unit * 26.47; // ~450px
-$max-width-workplace-content: $base-unit * 24.24; // ~450px
+$max-workplace-container: $base-unit * 26.50; // ~450px
+$max-width-workplace-content: $base-unit * 24.25; // ~450px
 $max-height-workplace-content: $base-unit * 17.65; // ~300px
 
 $deskopt-bg-positioning: left 85% bottom -100px;
@@ -28,17 +28,7 @@ $mobile-bg-positioning: right -20px top 225px;
         &__message {
             padding-top: $space * 4;
             padding-bottom: $space * 6;
-            color: $black-color;
-            font-size: $body-font-size * 1.76;
-            line-height: $body-font-size * 2.35;
-            @include max-media($br-deskopt) {
-                font-size: $body-font-size * 1.60;
-                line-height: $body-font-size * 1.88;
-            }
-            @include max-media($br-tablet) {
-                font-size: $body-font-size * 1.44;
-                line-height: $body-font-size * 1.41;
-            }
+            @extend %description-text;
         }
     }
 }
@@ -73,7 +63,6 @@ $mobile-bg-positioning: right -20px top 225px;
                 padding-bottom: $space * 6;
                 color: $black-color;
                 font-size: $body-font-size * 1.29;
-                line-height: $body-font-size * 1.88;
             }
             &__buttons {
                 display: flex;

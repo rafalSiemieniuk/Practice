@@ -11,9 +11,34 @@
             color: $black-color;
             padding-right: $space * 4;
             font-size: $body-font-size * 1.12;
+            display: inline-block;
+            transition: all .3s;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 3px;
+                background: #00FFCC;
+                transition: width .3s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+            &:hover {
+                text-shadow: 1px 0 0 $black-color;
+            }
             @include max-media($br-tablet) {
                 padding-right: $space * 2;
                 font-size: $body-font-size * .8;
+            }
+
+            &--selected {
+                text-shadow: 1px 0 0 $black-color;
+                &::after {
+                    width: 33px;
+                }
             }
         }
     }

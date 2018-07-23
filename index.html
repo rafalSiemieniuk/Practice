@@ -46,7 +46,7 @@
                     </li>
                 </ul>
                 <div class="hdr-top__registration__globe">
-                    <img class="image" src="assets/images/globe.png" alt="logo">
+                    <img class="hdr-top__registration__img-globe" src="assets/images/globe.png" alt="logo">
                     <i class="hdr-top__registration__icon material-icons">
                         keyboard_arrow_down
                     </i>
@@ -90,22 +90,22 @@
         <nav class="hdr-bottom__nav container">
             <ul class="hdr-bottom__nav__list">
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link unselected" href="#">zenifero WorkPlace:</a>
+                    <a class="hdr-bottom__nav__link" href="#">zenifero WorkPlace:</a>
                 </li>
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link selected" href="#">Overview</a>
+                    <a class="hdr-bottom__nav__link hdr-bottom__nav__link--selected" href="#">Overview</a>
                 </li>
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link unselected" href="#">Features</a>
+                    <a class="hdr-bottom__nav__link" href="#">Features</a>
                 </li>
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link unselected" href="#">Specs</a>
+                    <a class="hdr-bottom__nav__link" href="#">Specs</a>
                 </li>
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link unselected" href="#">FAQ</a>
+                    <a class="hdr-bottom__nav__link" href="#">FAQ</a>
                 </li>
                 <li class="hdr-bottom__nav__element">
-                    <a class="hdr-bottom__nav__link unselected" href="#">Contact</a>
+                    <a class="hdr-bottom__nav__link" href="#">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -126,10 +126,10 @@
                 </p>
                 <div class="workplace__container__buttons">
                     <a class="btn__black btn__black--google-play" href="#">
-                        <img class="image" src="assets/images/google_play.png" alt="Google Play">
+                        <img class="btn__black__image" src="assets/images/google_play.png" alt="Google Play">
                     </a>
                     <a class="btn__black btn__black--app-store" href="#">
-                        <img class="image" src="assets/images/appStore.png" alt="App Store">
+                        <img class="btn__black__image" src="assets/images/appStore.png" alt="App Store">
                     </a>
                 </div>
             </div>
@@ -139,36 +139,38 @@
     <!-- MANAGEMENT -->
 
     <section class="management">
-        <ul class="management__list container">
-            <li class="management__element">
-                <div class="management__element__title">Management</div>
-                <div class="management__element__text">Tools for real-time management of all your facilities and people across multiple sites. Ease, speed and effectiveness
-                    of facilities communications.</div>
-            </li>
-            <li class="management__element">
-                <div class="management__element__title">Employees</div>
-                <div class="management__element__text">Improved productivity and satisfaction as your employees stay informed, connected and can feed requests and
-                    updates in real time</div>
-            </li>
-            <li class="management__element">
-                <div class="management__element__title">Visitors</div>
-                <div class="management__element__text">A smooth and welcoming visitor experience – easy navigation around your facilities.</div>
-            </li>
-        </ul>
-        <ul class="slider-dots">
-            <li class="slider-dots-element slider-dots-element-active">
-                <button class="slider-dots-button" type="button">1</button>
-            </li>
-            <li class="slider-dots-element">
-                <button class="slider-dots-button" type="button">2</button>
-            </li>
-            <li class="slider-dots-element">
-                <button class="slider-dots-button" type="button">3</button>
-            </li>
-            <li class="slider-dots-element">
-                <button class="slider-dots-button" type="button">4</button>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="management__list">
+                <li class="management__element">
+                    <div class="management__element__title">Management</div>
+                    <div class="management__element__text">Tools for real-time management of all your facilities and people across multiple sites. Ease, speed and
+                        effectiveness of facilities communications.</div>
+                </li>
+                <li class="management__element">
+                    <div class="management__element__title">Employees</div>
+                    <div class="management__element__text">Improved productivity and satisfaction as your employees stay informed, connected and can feed requests
+                        and updates in real time</div>
+                </li>
+                <li class="management__element">
+                    <div class="management__element__title">Visitors</div>
+                    <div class="management__element__text">A smooth and welcoming visitor experience – easy navigation around your facilities.</div>
+                </li>
+            </ul>
+            <ul class="slider-dots">
+                <li class="slider-dots-element slider-dots-element-active">
+                    <button class="slider-dots-button" type="button">1</button>
+                </li>
+                <li class="slider-dots-element">
+                    <button class="slider-dots-button" type="button">2</button>
+                </li>
+                <li class="slider-dots-element">
+                    <button class="slider-dots-button" type="button">3</button>
+                </li>
+                <li class="slider-dots-element">
+                    <button class="slider-dots-button" type="button">4</button>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- PROBLEM-SLOVING-APP -->
@@ -220,6 +222,90 @@
                 </li>
             </ul>
         </div>
+    </section>
+
+    <!-- BRING-YOUR-BUILDINGS -->
+
+    <section class="bring-your-buildings container">
+        <div class="bring-your-buildings__wrapper">
+            <div class="bring-your-buildings__main-content">
+                <div class="bring-your-buildings__main-content__title">
+                    Bring your building back to 21st century
+                </div>
+                <div class="bring-your-buildings__main-content__text">
+                    The IoT allows your office to be sensed or controlled remotely across existing network infrastructure. Track and analyse
+                    workplace performance to gain your office efficiency.
+                </div>
+            </div>
+            <div class="bring-your-buildings__background">
+                <picture class="bring-your-buildings__background__picture">
+                    <source class="bring-your-buildings__background__feeler-wifi" media="(min-width: 768px)" srcset="assets/images/layer-59.png">
+                    <img class="bring-your-buildings__background__feeler-wifi" src="assets/images/mob_czujka.png" alt="Czujka wi-fi">
+                </picture>
+            </div>
+            <div class="bring-your-buildings__content">
+                <div class="bring-your-buildings__content__title">Sensor</div>
+                <div class="bring-your-buildings__content__text">The integration of zonifero with motion sensors allows dynamic display of occupancy of rooms and desks on
+                    the map. The functionality is especially useful in the case of rapidly changing availability of rooms.
+                    The use of motion sensors in the office allows you to generate heat maps for offices.
+                </div>
+            </div>
+            <div class="bring-your-buildings__content bring-your-buildings__content--real-time">
+                <div class="bring-your-buildings__content__title">Real-time conference room
+                    <br> and desk availability updates</div>
+                <div class="bring-your-buildings__content__text">
+                    <p class="bring-your-buildings__content__text-top">Zonifero business supports the booking of hot-desks, meeting and other rooms. Reservations can be made
+                        from the application on the tablet in front of the room or directly from the calendar in Office365
+                        or G Suite. Room reservations can also be made for businesses that do not use Office 365 or G Suite.</p>
+                    <p class="bring-your-buildings__content__text-bottom">zonifero business also has a calendar feature that can be run on a tablet in front of the conference
+                        room. This part of the app is protected so that it can run only this application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+
+    <section class="contact container">
+        <ul class="contact__menu-list">
+            <li class="contact__menu-list__menu-element contact__menu-list__menu-element--selected">Contact form</li>
+            <li class="contact__menu-list__menu-element">Call us</li>
+        </ul>
+        <form action="#" method="post" class="contact__form">
+            <p class="contact__form__element">
+                <label for="firstName" class="contact__form__label">
+                    <span class="contact__form__title-asterisk">First name</span>
+                    <input type="text" name="firstName" id="firstName" class="contact__form__input" value="John" />
+                </label>
+            </p>
+            <p class="contact__form__element">
+                <label for="familyName" class="contact__form__label">
+                    <span class="contact__form__title-asterisk">Family name</span>
+                    <input type="text" name="familyName" id="familyName" class="contact__form__input" value="Wick" />
+                </label>
+            </p>
+            <p class="contact__form__element contact__form__element--phone">
+                <label for="phoneNumber" class="contact__form__label">
+                    <span class="contact__form__title">Your phone</span>
+                    <input type="text" name="phoneNumber" id="phoneNumber" class="contact__form__input" value="+48 605 708 904" />
+                </label>
+            </p>
+            <p class="contact__form__element contact__form__element--email">
+                <label for="emailAddress" class="contact__form__label">
+                    <span class="contact__form__title-asterisk">Your email</span>
+                    <input type="text" name="emailAddress" id="emailAddress" class="contact__form__input" value="johnw@hollywood.com" />
+                </label>
+            </p>
+            <p class="contact__form__element contact__form__element--message">
+                <label for="message" class="contact__form__label">
+                    <span class="contact__form__title-asterisk">Message</span>
+                    <textarea id="message" name="message" class="contact__form__input contact__form__input--message">Hello :) I’m just wondering if you could..</textarea>
+                </label>
+            </p>
+            <p class="contact__form__wrap-btn">
+                <button class="contact__form__btn btn btn__primary">Send message</button>
+            </p>
+        </form>
     </section>
 
 </body>

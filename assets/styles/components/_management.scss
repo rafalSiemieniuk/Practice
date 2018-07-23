@@ -8,28 +8,23 @@
 
     &__list {
         @include grid(row);
+        margin-left: $space * -1;
+        margin-right: $space * -1;
     }
 
     &__element {
         @include grid-col-tablet(3);
-        padding-top: $space * 6;
-        padding-bottom: $space * 9;
-        margin-left: $space * -1;
-        margin-right: $space * -1;
+        padding: $space * 6 $space $space * 9 $space;
 
         &__title {
             @extend %second-headerline-text;
             max-width: $space * 33;
             padding-bottom: $space * 4;
-            padding-left: $space;
-            padding-right: $space;
         }
 
         &__text {
             max-width: $space * 33;
             font-weight: 300;
-            padding-left: $space;
-            padding-right: $space;
         }
     }
 }
@@ -41,12 +36,11 @@
     .management__list {
         justify-content: flex-start;
         flex-wrap: nowrap;
-        padding: 0;
     }
 
     .management__element {
         flex: 0 0 100%;
-        margin: 0;
+        padding-top: $space * 12;
 
         &__title {
             margin: 0 auto;

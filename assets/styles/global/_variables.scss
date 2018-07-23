@@ -3,9 +3,11 @@ $primary-color-light: #BEC3FF;
 $complementary-color: #00C599;
 $complementary-color-light: #00FFCC;
 $grey-color: #F7F7F7;
+$grey-color-dark: #2A2A2A;
 $danger-color: #FF0000;
 $black-color: #000;
 $white-color: #FFF;
+$white-color-opacity: rgba(255, 255, 255, 0.2);
 
 $primary-font: 'Roboto', sans-serif;
 $second-font: 'Poppins', sans-serif;
@@ -17,19 +19,19 @@ $fw-bold: 700;
 $base-unit: 1rem;
 
 $body-font-size: $base-unit;
-$body-line-height: 1.47;
+$body-line-height: 1.45;
 
-$space: .5882 * $base-unit; // ~10px
+$space: .60 * $base-unit; // ~10px
 
 $deskopt-header-space: $base-unit * 2.35; // ~40px
-$mobile-header-space: $base-unit * 1.17; // ~20px
+$mobile-header-space: $base-unit * 1.20; // ~20px
 
-$max-deskopt-hdr-top-height: $base-unit * 6.47; // ~110px
-$max-deskopt-hdr-bottom-height: $base-unit * 3.82; // ~65px
+$max-deskopt-hdr-top-height: $base-unit * 6.50; // ~110px
+$max-deskopt-hdr-bottom-height: $base-unit * 3.80; // ~65px
 $max-deskopt-header-height: $max-deskopt-hdr-top-height + $max-deskopt-hdr-bottom-height; // ~175px;
-$max-mobile-hdr-top-height: $base-unit * 3.64; // ~61.9px
+$max-mobile-hdr-top-height: $base-unit * 3.65; // ~61.9px
 
-$container: 70.5882 * $base-unit; // ~1200px
+$container: 70.50 * $base-unit; // ~1200px
 
 $br-mobile: 567px;
 $br-tablet: 768px;

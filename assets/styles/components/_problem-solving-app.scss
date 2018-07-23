@@ -1,7 +1,8 @@
 .problem-sloving-app {
     overflow: hidden;
     background-color: $grey-color;
-    padding: $space * 3 0;
+    padding-top: $space * 3;
+
     &__container {
         position: relative;
         background-color: $grey-color;
@@ -35,7 +36,12 @@
     .problem-sloving-app {
         justify-content: flex-start;
         flex-wrap: nowrap;
-        padding: 0;
+
+        &__header-name {
+            max-width: $space * 31;
+            margin: 0 auto;
+            padding: 0;
+        }
 
         &__list, &__container {
             padding: 0;
@@ -50,6 +56,11 @@
 
             &__title, &__text {
                 max-width: $space * 31;
+            }
+
+            &__desk-img {
+                max-width: 100%;
+                height: auto;
             }
         }
     }

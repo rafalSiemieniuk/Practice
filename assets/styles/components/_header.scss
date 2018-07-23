@@ -40,6 +40,10 @@
             display: flex;
             align-items: flex-end;
         }
+        &__img-globe {
+            max-width: 100%;
+            height: auto;
+        }
         &__icon {
             margin-bottom: $space * -.5;
         }

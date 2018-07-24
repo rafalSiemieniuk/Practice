@@ -51,6 +51,21 @@
                 @include grid-col-tablet();
                 order: 5;
             }
+
+            &--checked {
+                position: relative;
+            }
+
+            &--checked::before {
+                position: absolute;
+                color: $primary-color;
+                font-size: $body-font-size * 1.75;
+                font-family: 'Material Icons';
+                content: "done";
+                display: block;
+                bottom: 8px;
+                right: $space * 6;
+            }
         }
 
         &__label {
@@ -126,6 +141,10 @@
 
                 &--phone {
                     order: 4;
+                }
+
+                &--checked::before {
+                    content: "";
                 }
             }
 

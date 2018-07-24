@@ -47,3 +47,22 @@
         line-height: $body-font-size * 1.88;
     }
 }
+
+%another-headerline {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: $body-font-size * 2.95;
+    line-height: $body-font-size * 3.5;
+    @include max-media($br-deskopt) {
+        font-size: $body-font-size * 2.60;
+        line-height: $body-font-size * 3.15;
+    }
+    @include max-media($br-tablet) {
+        font-size: $body-font-size * 2.30;
+        line-height: $body-font-size * 2.90;
+    }
+    @include max-media($br-mobile) {
+        font-size: $body-font-size * 2.05;
+        line-height: $body-font-size * 2.65;
+    }
+}

@@ -1,0 +1,59 @@
+.main-ftr   {
+    background-color: $primary-color;
+    color: $white-color;
+    // min-height: 100vh;
+
+    &__top-ftr {
+        padding-top: $space * 9;
+    }
+    &__list {
+        margin-left: $space * -1;
+        margin-right: $space * -1;
+        @include grid(row,wrap);
+    }
+    &__element {
+        @include grid-col(3.63);
+        flex-grow: 0;
+        padding-left: $space;
+        padding-right: $space;
+        padding-bottom: $space * 6.5;
+
+        &__title {
+            padding-bottom: $space * 3;
+        }
+
+        &__subelement {
+            padding-bottom: $space * .3;
+            font-weight: 300;
+            color: $grey-color;
+            opacity: .8;
+        }
+    }
+
+    &__bottom-ftr {
+        margin-top: $space * 9;
+        border-top: 1px solid $white-color-opacity;
+        padding-top: $space * 3;
+        padding-bottom: $space * 2;
+        padding-bottom: $space * 13;
+    }
+
+    &__menu {
+        padding-left: $space * 3;
+        padding-right: $space * 3;
+        text-align: right;
+
+        &__ex-logo {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @include max-media($br-mobile) {
+        &__bottom-ftr {
+            margin-top: 0;
+            padding-bottom: $space * 2;
+        }
+    }
+}
+
